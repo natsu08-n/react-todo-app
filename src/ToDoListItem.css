@@ -1,0 +1,89 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  width: 800px;
+}
+
+.App-form {
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 4px;
+  padding-bottom: 16px;
+  width: 300px;
+}
+
+.App-form > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-form > :nth-child(1) > * {
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  outline: none;
+  transition: all .3s;
+}
+
+.App-form > :nth-child(1) > *:focus {
+  border: 1px solid #1abc9c;
+  box-shadow: 0 0 7px #1abc9c;
+}
+
+.App-form > :nth-child(1) > :first-child {
+  font-size: 18px;
+  height: 24px;
+  padding: 2px 8px;
+}
+
+.App-form > :nth-child(1) > :last-child {
+  font-size: 18px;
+  height: 24px;
+  padding: 2px 8px;
+}
+
+.App-form > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.App-form button {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,.1);
+  cursor: pointer;
+  margin-top: 8px;
+  padding: 4px 8px;
+}
+
+.App-form button:hover {
+  box-shadow: 0px 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.ToDoListItem {
+  background-color: #fafbfd;
+  border: 1px solid aquamarine;
+  border-radius: 4px;
+  box-shadow: 1px 2px 5px 3px rgba(0,0,0,.1);
+  margin: 12px;
+  padding: 4px 2px;
+  width: 300px;
+}
+
+.ToDoListItem-title {
+  border-bottom: 1px solid #333;
+  font-size: 18px;
+  margin: 0 8px 4px;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+.ToDoListItem-description {
+  padding: 8px;
+  word-wrap: break-word;
+}
