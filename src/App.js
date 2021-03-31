@@ -51,6 +51,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h2>ToDoリスト</h2>
         <form 
           className="App-form"
           onSubmit={e => {
@@ -81,7 +82,7 @@ class App extends Component {
           </div>
           <div>
             <button type = "submit">登録</button>
-            <p>ToDoリスト押下で削除ができます</p>
+            <p>削除するには作成したToDoリストを押下</p>
           </div>
         </form>
         <div>

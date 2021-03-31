@@ -1,3 +1,8 @@
+body {
+  background: #d9e1e8;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+
 .App {
   align-items: center;
   display: flex;
@@ -7,12 +12,18 @@
   width: 800px;
 }
 
+h2 {
+  color: #282c37;
+  font-family: Verdana;
+  font-weight: 500;
+}
+
 .App-form {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #9baec8;
   display: flex;
   flex-direction: column;
   margin: 8px 4px;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   width: 300px;
 }
 
@@ -22,27 +33,29 @@
 }
 
 .App-form > :nth-child(1) > * {
-  border: 1px solid #aaa;
-  border-radius: 2px;
+  border: 1px solid #9baec8;
+  border-radius: 4px;
   outline: none;
   transition: all .3s;
 }
 
 .App-form > :nth-child(1) > *:focus {
-  border: 1px solid #1abc9c;
-  box-shadow: 0 0 7px #1abc9c;
+  border: 1px solid #2b90d9;
+  box-shadow: 0 0 7px #2b90d9;
 }
 
 .App-form > :nth-child(1) > :first-child {
   font-size: 18px;
   height: 24px;
-  padding: 2px 8px;
+  padding: 4px 8px;
 }
 
 .App-form > :nth-child(1) > :last-child {
-  font-size: 18px;
-  height: 24px;
+  font-size: 16px;
+  height: 48px;
+  margin-top: 2px;
   padding: 2px 8px;
+  resize: none;
 }
 
 .App-form > :nth-child(2) {
@@ -52,40 +65,59 @@
 }
 
 .App-form button {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+  background: #2b90d9;
+  border: 1px solid #9baec8;
+  border-radius: 8px;
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,.1);
+  color: #fff;
   cursor: pointer;
-  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px auto 0;
   padding: 4px 8px;
+  width: 50%;
 }
 
 .App-form button:hover {
   box-shadow: 0px 2px 2px 2px rgba(0,0,0,.1);
 }
 
+.App-form button:active {
+  box-shadow: none;
+}
+
+.App-form button:focus {
+  outline: 0;
+}
+
+p {
+  color: #282c37;
+  margin-bottom: 0;
+}
+
 .ToDoListItem {
-  background-color: #fafbfd;
-  border: 1px solid aquamarine;
-  border-radius: 4px;
-  box-shadow: 1px 2px 5px 3px rgba(0,0,0,.1);
+  background-color: #9baec8;
+  border: 2px solid #2b90d9;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 3px rgba(0,0,0,.2);
+  color: #282c37;
   margin: 12px;
   padding: 4px 2px;
+  text-align: left;
   width: 300px;
 }
 
 .ToDoListItem:hover {
-  box-shadow: 1px 2px 5px 5px rgba(0,0,0,.1);
+  box-shadow: 1px 2px 5px 5px rgba(0,0,0,.2);
   cursor: pointer;
 }
 
 .ToDoListItem-title {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #d9e1e8;
   font-size: 18px;
+  font-weight: bold;
   margin: 0 8px 4px;
   padding: 4px 8px;
-  text-align: left;
 }
 
 .ToDoListItem-description {
