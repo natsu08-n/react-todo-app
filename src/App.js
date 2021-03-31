@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import ToDoListItem from "./ToDoListItem.js"
 
 // Appという名称のコンポーネントの作成
@@ -43,15 +42,11 @@ class App extends Component {
     )
   }
 
-
-
-
-
   // renderメソッドでビューとなるJSXをreturnで返す
   render() {
     return (
       <div className="App">
-        <h2>ToDoリスト</h2>
+        <h2>React ToDoリスト</h2>
         <form 
           className="App-form"
           onSubmit={e => {
