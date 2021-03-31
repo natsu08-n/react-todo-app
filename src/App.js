@@ -19,6 +19,7 @@ class App extends Component {
           className="App-form"
           onSubmit={e => {
             // formのデフォルトイベントキャンセル
+            // (フォームが持つデフォルトの動作は、フォームの内容を指定したURLへ送信するという動作。form要素に送信先が指定されていない場合、現在のURLに対してフォームの内容を送信するのでこれをキャンセル。)
             e.preventDefault();
             // idがtitleのElement取得
             const titleElement = e.target.elements["title"];
@@ -46,6 +47,7 @@ class App extends Component {
           </div>
           <div>
             <button type = "submit">登録</button>
+            <p>ToDoリスト押下で削除ができます</p>
           </div>
         </form>
         <div>
@@ -55,6 +57,12 @@ class App extends Component {
               key={todo.title}
               title={todo.title}
               description={todo.description}
+
+              onClick={() => {
+                this.setState({
+                  todoList: this.state.todoList.filter(x => x !== todo)
+                })
+              }}
             />
           ))}
         </div>
